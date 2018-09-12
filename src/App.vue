@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <count-down :beginTime="1536307968" :endTime="1536394368" :match="'HH:MM'"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import CountDown from '@/components/CountDown'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CountDown
   }
 }
 </script>
