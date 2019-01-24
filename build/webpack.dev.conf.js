@@ -64,7 +64,15 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    // new WebPWebpackPlugin({
+    //   match: /(jpe?g|png)$/,
+    //   inject: false,
+    //   injectCode: '',
+    //   webp: {
+    //     quality: 80
+    //   }
+    // })
   ]
 })
 
